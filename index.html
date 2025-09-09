@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="metal.css">
+    <title>Heavy Metal Universe - The Complete Guide</title>
+
+</head>
+<body>
+    <div class="hero">
+        <div class="hero-content">
+            <h1>HEAVY METAL UNIVERSE</h1>
+            <p class="subtitle">Explore the Complete Guide to Metal Subgenres</p>
+            <button class="nav-button" onclick="scrollToSection('timeline')">Explore History</button>
+            <button class="nav-button" onclick="scrollToSection('subgenres')">Discover Subgenres</button>
+        </div>
+    </div>
+
+    <section id="timeline" class="section">
+        <div class="container">
+            <h2 class="section-title">The Evolution of Metal</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-year">1970s</div>
+                        <h3>The Birth of Heavy Metal</h3>
+                        <p>Heavy metal emerged from blues rock and psychedelic rock. Black Sabbath, Led Zeppelin, and Deep Purple laid the foundation with heavier, more distorted sounds and darker themes.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-year">1980s</div>
+                        <h3>The Golden Age</h3>
+                        <p>Metal exploded with NWOBHM (New Wave of British Heavy Metal), thrash metal emerged in the US, and speed metal pushed boundaries. Iron Maiden, Metallica, and Judas Priest became legends.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-year">1990s</div>
+                        <h3>Diversification Era</h3>
+                        <p>Death metal, black metal, and doom metal gained prominence. Alternative metal and nu-metal brought metal to mainstream audiences while extreme subgenres pushed into new territories.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2000s+</div>
+                        <h3>Modern Evolution</h3>
+                        <p>Metalcore, post-metal, and djent emerged. Progressive metal reached new heights, and fusion subgenres blended metal with electronic, folk, and other musical styles.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="subgenres" class="section">
+        <div class="container">
+            <h2 class="section-title">Metal Subgenres</h2>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" onclick="filterGenres('all')">All Genres</button>
+                <button class="filter-btn" onclick="filterGenres('classic')">Classic</button>
+                <button class="filter-btn" onclick="filterGenres('extreme')">Extreme</button>
+                <button class="filter-btn" onclick="filterGenres('progressive')">Progressive</button>
+                <button class="filter-btn" onclick="filterGenres('modern')">Modern</button>
+            </div>
+
+            <div class="subgenres-grid" id="subgenres-grid">
+                <div class="subgenre-card" data-category="classic">
+                    <h3 class="subgenre-title">Heavy Metal (Traditional)</h3>
+                    <p class="subgenre-description">The foundation of all metal music, characterized by powerful vocals, guitar solos, and anthemic choruses.</p>
+                    <div class="bands-list"><strong>Key Bands:</strong> Black Sabbath, Iron Maiden, Judas Priest, Accept</div>
+                </div>
+
+                <div class="subgenre-card" data-category="extreme">
+                    <h3 class="subgenre-title">Thrash Metal</h3>
+                    <p class="subgenre-description">Fast, aggressive metal with complex riffs, rapid drumming, and often politically charged lyrics.</p>
+                    <div class="bands-list"><strong>Key Bands:</strong> Metallica, Slayer, Megadeth, Anthrax</div>
+                </div>
+
+                <div class="subgenre-card" data-category="extreme">
+                    <h3 class="subgenre-title">Death Metal</h3>
+                    <p class="subgenre-description">Extreme metal featuring growled vocals, heavily distorted guitars, and complex song structures.</p>
+                    <div class="bands-list"><strong>Key Bands:</strong> Death, Cannibal Corpse, Morbid Angel, Obituary</div>
+                </div>
+
+                <div class="subgenre-card" data-category="extreme">
+                    <h3 class="subgenre-title">Black Metal</h3>
+                    <p class="subgenre-description">Raw, atmospheric metal with shrieked vocals, tremolo picking, and often occult or nature themes.</p>
+                    <div class="bands-list"><strong>Key Bands:</strong> Mayhem, Burzum, Darkthrone, Emperor</div>
+                </div>
+
+                <div class="subgenre-card" data-category="classic">
+                    <h3 class="subgenre-title">Doom Metal</h3>
+                    <p class="subgenre-description">Slow, heavy metal emphasizing atmosphere, despair, and crushing riffs.</p>
+                    <div class="bands-list"><strong>Key Bands:</strong> Candlemass, Saint Vitus, Electric Wizard, Sleep</div>
+                </div>
+
+                <div class="subgenre-card" data-category="classic">
+                    <h3 class="subgenre-title">Power Metal</h3>
+                    <p class="subgenre-description">Uplifting metal with soaring vocals, fantasy themes, and virtuosic musicianship.</p>
+                    <div class="bands-list"><strong>Key Bands:</strong> Helloween, Blind Guardian, DragonForce, Stratovarius</div>
+                </div>
+
+                <div class="subgenre-card" data-category="progressive">
+                    <h3 class="subgenre-title">Progressive Metal</h3>
+                    <p class="subgenre-description">Complex, technical metal incorporating odd time signatures and experimental elements.</p>
+                    <div class="bands-list"><strong>Key Bands:</strong> Dream Theater, Tool, Opeth, Mastodon</div>
+                </div>
+
+                <div class="subgenre-card" data-category="modern">
+                    <h3 class="subgenre-title">Metalcore</h3>
+                    <p class="subgenre-description">Fusion of extreme metal and hardcore punk with breakdowns and clean/harsh vocal contrast.</p>
+                    <div class="bands-list"><strong>Key Bands:</strong> Killswitch Engage, As I Lay Dying, Parkway Drive, August Burns Red</div>
+                </div>
+
+                <div class="subgenre-card" data-category="modern">
+                    <h3 class="subgenre-title">Nu Metal</h3>
+                    <p class="subgenre-description">Alternative metal incorporating elements of hip-hop, funk, and industrial music.</p>
+                    <div class="bands-list"><strong>Key Bands:</strong> Korn, Limp Bizkit, Linkin Park, System of a Down</div>
+                </div>
+
+                <div class="subgenre-card" data-category="classic">
+                    <h3 class="subgenre-title">Folk Metal</h3>
+                    <p class="subgenre-description">Metal combined with traditional folk instruments and melodies from various cultures.</p>
+                    <div class="bands-list"><strong>Key Bands:</strong> Finntroll, Eluveitie, Korpiklaani, Amon Amarth</div>
+                </div>
+
+                <div class="subgenre-card" data-category="extreme">
+                    <h3 class="subgenre-title">Grindcore</h3>
+                    <p class="subgenre-description">Extremely fast, aggressive music with very short songs and politically charged lyrics.</p>
+                    <div class="bands-list"><strong>Key Bands:</strong> Napalm Death, Pig Destroyer, Brutal Truth, Carcass</div>
+                </div>
+
+                <div class="subgenre-card" data-category="progressive">
+                    <h3 class="subgenre-title">Post-Metal</h3>
+                    <p class="subgenre-description">Atmospheric, experimental metal emphasizing texture and dynamics over traditional song structure.</p>
+                    <div class="bands-list"><strong>Key Bands:</strong> Neurosis, Isis, Cult of Luna, Russian Circles</div>
+                </div>
+
+                <div class="subgenre-card" data-category="modern">
+                    <h3 class="subgenre-title">Djent</h3>
+                    <p class="subgenre-description">Rhythmically complex metal characterized by palm-muted, syncopated riffs and polyrhythms.</p>
+                    <div class="bands-list"><strong>Key Bands:</strong> Meshuggah, Periphery, TesseracT, Animals as Leaders</div>
+                </div>
+
+                <div class="subgenre-card" data-category="extreme">
+                    <h3 class="subgenre-title">Melodic Death Metal</h3>
+                    <p class="subgenre-description">Death metal combined with melodic elements, twin guitar harmonies, and accessible song structures.</p>
+                    <div class="bands-list"><strong>Key Bands:</strong> In Flames, At the Gates, Dark Tranquillity, Arch Enemy</div>
+                </div>
+
+                <div class="subgenre-card" data-category="classic">
+                    <h3 class="subgenre-title">Symphonic Metal</h3>
+                    <p class="subgenre-description">Metal incorporating orchestral elements, operatic vocals, and classical music influences.</p>
+                    <div class="bands-list"><strong>Key Bands:</strong> Nightwish, Within Temptation, Epica, Therion</div>
+                </div>
+
+                <div class="subgenre-card" data-category="modern">
+                    <h3 class="subgenre-title">Industrial Metal</h3>
+                    <p class="subgenre-description">Metal combined with industrial music elements, electronic sounds, and mechanical rhythms.</p>
+                    <div class="bands-list"><strong>Key Bands:</strong> Ministry, Rammstein, Fear Factory, Nine Inch Nails</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-section">
+        <div class="container">
+            <h2 class="section-title">Metal by the Numbers</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number">50+</span>
+                    <p>Major Subgenres</p>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">54</span>
+                    <p>Years of Evolution</p>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100K+</span>
+                    <p>Active Bands Worldwide</p>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">∞</span>
+                    <p>Metal Spirit</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="interactive-map">
+        <div class="container">
+            <h2 class="section-title">Global Metal Origins</h2>
+            <div class="map-container">
+                <div class="region scandinavia" onclick="showRegionInfo('Scandinavia')">
+                    <strong>Scandinavia</strong><br>
+                    Black Metal Homeland
+                </div>
+                <div class="region uk" onclick="showRegionInfo('UK')">
+                    <strong>United Kingdom</strong><br>
+                    NWOBHM Birthplace
+                </div>
+                <div class="region germany" onclick="showRegionInfo('Germany')">
+                    <strong>Germany</strong><br>
+                    Power Metal Capital
+                </div>
+                <div class="region usa" onclick="showRegionInfo('USA')">
+                    <strong>United States</strong><br>
+                    Thrash Metal Origins
+                </div>
+                <div class="region brazil" onclick="showRegionInfo('Brazil')">
+                    <strong>Brazil</strong><br>
+                    South American Metal Hub
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Heavy Metal Universe. Keep the metal spirit alive! 🤘</p>
+            <p>Created with passion for the metal community worldwide.</p>
+        </div>
+    </footer>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        function filterGenres(category) {
+            const cards = document.querySelectorAll('.subgenre-card');
+            const buttons = document.querySelectorAll('.filter-btn');
+            
+            // Update active button
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            // Filter cards
+            cards.forEach(card => {
+                if (category === 'all' || card.dataset.category === category) {
+                    card.style.display = 'block';
+                    card.style.animation = 'fadeIn 0.5s ease';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        function showRegionInfo(region) {
+            const info = {
+                'Scandinavia': 'Scandinavia gave birth to black metal in the early 1990s, with Norwegian bands like Mayhem, Burzum, and Darkthrone pioneering the raw, atmospheric sound that defined the genre.',
+                'UK': 'The UK launched the New Wave of British Heavy Metal (NWOBHM) in the late 1970s, with bands like Iron Maiden, Judas Priest, and Saxon influencing metal worldwide.',
+                'Germany': 'Germany became the epicenter of power metal with bands like Helloween and Blind Guardian, known for their melodic, fantasy-themed approach to metal.',
+                'USA': 'The United States birthed thrash metal in the 1980s with the "Big Four": Metallica, Megadeth, Slayer, and Anthrax, revolutionizing metal with speed and aggression.',
+                'Brazil': 'Brazil developed a unique metal scene with bands like Sepultura and Angra, blending metal with local musical influences and becoming South America\'s metal capital.'
+            };
+            
+            alert(info[region]);
+        }
+
+        // Add CSS animation keyframes
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes fadeIn {
+                from { opacity: 0; transform: translateY(20px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Add scroll animations
+        window.addEventListener('scroll', () => {
+            const cards = document.querySelectorAll('.subgenre-card');
+            cards.forEach(card => {
+                const rect = card.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom > 0) {
+                    card.style.transform = 'translateY(0)';
+                    card.style.opacity = '1';
+                }
+            });
+        });
+
+        // Initialize card animations
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.subgenre-card');
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(50px)';
+                card.style.transition = 'all 0.6s ease';
+                card.style.transitionDelay = `${index * 0.1}s`;
+            });
+        });
+    </script>
+</body>
+</html>
