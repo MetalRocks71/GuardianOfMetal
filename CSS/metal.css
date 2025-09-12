@@ -20,7 +20,7 @@ body {
     position: relative;
     background: radial-gradient(circle at center, #ff0040 0%, #8b0000 30%, #000 70%);
     text-align: center;
-    background-image: url(img/metalcorebandas.jpg)
+    background-image: url("img/metalcorebandas.jpg")
 }
 
 .hero::before {
