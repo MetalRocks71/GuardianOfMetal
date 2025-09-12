@@ -5,20 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="metal.css">
+    <link rel="stylesheet" href="/img/metalcorebandas.jpg">
     <script src="card.js"></script>
     <title>Heavy Metal Universe - The Complete Guide</title>
 
 </head>
 
 <body>
-    <div class="hero">
-        <div class="hero-content">
-            <h1>HEAVY METAL UNIVERSE</h1>
-            <p class="subtitle">Explore the Complete Guide to Metal Subgenres</p>
-            <button class="nav-button" onclick="scrollToSection('timeline')">Explore History</button>
-            <button class="nav-button" onclick="scrollToSection('subgenres')">Discover Subgenres</button>
+    <nav class="hero">
+        <div class="hero-image">
+            <div class="hero-content">
+
+                <button class="nav-button" onclick="scrollToSection('timeline')">Explore History</button>
+                <button class="nav-button" onclick="scrollToSection('subgenres')">Discover Subgenres</button>
+            </div>
         </div>
-    </div>
+    </nav>
 
     <section id="timeline" class="section">
         <div class="container">
@@ -63,7 +65,7 @@
     </section>
 
     <section id="subgenres" class="section">
-        <div class="container">
+        <div class="container_1">
             <h2 class="section-title">Metal Subgenres</h2>
 
             <div class="filter-buttons">
@@ -79,7 +81,12 @@
                     <h3 class="subgenre-title">Heavy Metal (Traditional)</h3>
                     <p class="subgenre-description">The foundation of all metal music, characterized by powerful vocals,
                         guitar solos, and anthemic choruses.</p>
-                    <div class="bands-list"><strong>Key Bands:</strong> Black Sabbath, Iron Maiden, Judas Priest, Accept
+                    <div class="bands-list"><strong>Key Bands:</strong>
+                        <a href="https://www.blacksabbath.com/" class="bands-list">Black Sabbath
+                            &copy;</a>
+                        <a href="https://www.ironmaiden.com/" class="bands-list">Iron Maiden &copy;</a>
+                        <a href="https://judaspriest.com/home/" class="bands-list">Judas Priest &copy;</a>
+                        <a href="https://www.acceptworldwide.com/ " class="bands-list">Accept &copy;</a>
                     </div>
                 </div>
 
@@ -87,14 +94,31 @@
                     <h3 class="subgenre-title">Thrash Metal</h3>
                     <p class="subgenre-description">Fast, aggressive metal with complex riffs, rapid drumming, and often
                         politically charged lyrics.</p>
-                    <div class="bands-list"><strong>Key Bands:</strong> Metallica, Slayer, Megadeth, Anthrax</div>
+                    <div class="bands-list"><strong>Key Bands:</strong>
+                        <a href="https://www.metallica.com/?srsltid=AfmBOooHMK5KiQVuUjbqTx8EuRhKKAKBLJa-spoMblpqqeflZ9XYMDzQ"
+                            class="bands-list">Metallica
+                            &copy;</a>
+                        <a href="https://www.megadeth.com/?srsltid=AfmBOorh88hyKHiWcpphAB3DOFxR3e5O2NuZIBLyNUIuVQ8v03SIX5jy"
+                            class="bands-list">Megadeth &copy;</a>
+                        <a href="https://www.slayer.net/" class="bands-list">Slayer &copy;</a>
+                        <a href="https://www.anthrax.com/" class="bands-list">Anthrax &copy;</a>
+
+                    </div>
                 </div>
 
                 <div class="subgenre-card" data-category="extreme">
                     <h3 class="subgenre-title">Death Metal</h3>
                     <p class="subgenre-description">Extreme metal featuring growled vocals, heavily distorted guitars,
                         and complex song structures.</p>
-                    <div class="bands-list"><strong>Key Bands:</strong> Death, Cannibal Corpse, Morbid Angel, Obituary
+                    <div class="bands-list"><strong>Key Bands:</strong>
+
+                        <a href="https://napalmrecords.com/deutsch/death?srsltid=AfmBOooUiw_3LhFiHHQ01djqBuIvf_wA2QcYKZ36f5RgMNx2xQ93q70g"
+                            class="bands-list">Death
+                            &copy;</a>
+                        <a href="http://www.cannibalcorpse.net/" class="bands-list">Cannibal Corpse &copy;</a>
+                        <a href="http://www.morbidangel.com/" class="bands-list">Morbid Angel &copy;</a>
+                        <a href="https://www.obituary.cc/" class="bands-list">Obituary &copy;</a>
+
                     </div>
                 </div>
 
@@ -102,53 +126,96 @@
                     <h3 class="subgenre-title">Black Metal</h3>
                     <p class="subgenre-description">Raw, atmospheric metal with shrieked vocals, tremolo picking, and
                         often occult or nature themes.</p>
-                    <div class="bands-list"><strong>Key Bands:</strong> Mayhem, Burzum, Darkthrone, Emperor</div>
+                    <div class="bands-list"><strong>Key Bands:</strong>
+                        <a href="https://www.thetruemayhem.com/" class="bands-list">Mayhem
+                            &copy;</a>
+                        <a href="https://burzum.org/eng/news.shtml" class="bands-list">Burzum &copy;</a>
+                        <a href="https://napalmrecords.com/deutsch/darkthrone?srsltid=AfmBOoof8YNatcMrW2AJzYcTr7LCuEb-3JCkRPimFUvv4zMqi0dzIOef"
+                            class="bands-list">Darkthrone &copy;</a>
+                        <a href="https://emperormerch.com/" class="bands-list">Emperor &copy;</a>
+
+                    </div>
                 </div>
 
                 <div class="subgenre-card" data-category="classic">
                     <h3 class="subgenre-title">Doom Metal</h3>
                     <p class="subgenre-description">Slow, heavy metal emphasizing atmosphere, despair, and crushing
                         riffs.</p>
-                    <div class="bands-list"><strong>Key Bands:</strong> Candlemass, Saint Vitus, Electric Wizard, Sleep
+                    <div class="bands-list"><strong>Key Bands:</strong>
+
+                        <a href="https://www.candlemass.se/" class="bands-list">Candlemass
+                            &copy;</a>
+                        <a href="https://www.saintvitusband.com/" class="bands-list">Saint Vitus &copy;</a>
+                        <a href="https://www.metalblade.com/us/artists/electric-wizard/" class="bands-list">Electric
+                            Wizard &copy;</a>
+                        <a href="https://earache.com/collections/sleep" class="bands-list">Sleep &copy;</a>
+
                     </div>
                 </div>
-
                 <div class="subgenre-card" data-category="classic">
                     <h3 class="subgenre-title">Power Metal</h3>
                     <p class="subgenre-description">Uplifting metal with soaring vocals, fantasy themes, and virtuosic
                         musicianship.</p>
-                    <div class="bands-list"><strong>Key Bands:</strong> Helloween, Blind Guardian, DragonForce,
-                        Stratovarius</div>
+                    <div class="bands-list"><strong>Key Bands:</strong>
+
+
+                        <a href="https://www.helloween.org/" class="bands-list">Helloween
+                            &copy;</a>
+                        <a href="https://www.blind-guardian.com/" class="bands-list">Blind Guardian &copy;</a>
+                        <a href="https://dragonforce.com/" class="bands-list">DragonForce &copy;</a>
+                        <a href="https://stratovarius.com/" class="bands-list">Stratovarius &copy;</a>
+                    </div>
                 </div>
 
                 <div class="subgenre-card" data-category="progressive">
                     <h3 class="subgenre-title">Progressive Metal</h3>
                     <p class="subgenre-description">Complex, technical metal incorporating odd time signatures and
                         experimental elements.</p>
-                    <div class="bands-list"><strong>Key Bands:</strong> Dream Theater, Tool, Opeth, Mastodon</div>
+                    <div class="bands-list">
+                        <strong>Key Bands:</strong>
+                        <a href="https://www.dreamtheater.net/" class="band-link">Dream Theater &copy;</a>
+                        <a href="https://toolband.com/" class="band-link">Tool &copy;</a>
+                        <a href="https://opeth.com/" class="band-link">Opeth &copy;</a>
+                        <a href="https://www.mastodonrocks.com/" class="band-link">Mastodon &copy;</a>
+                    </div>
                 </div>
 
                 <div class="subgenre-card" data-category="modern">
                     <h3 class="subgenre-title">Metalcore</h3>
                     <p class="subgenre-description">Fusion of extreme metal and hardcore punk with breakdowns and
                         clean/harsh vocal contrast.</p>
-                    <div class="bands-list"><strong>Key Bands:</strong> Killswitch Engage, As I Lay Dying, Parkway
-                        Drive, August Burns Red</div>
+                    <div class="bands-list">
+                        <strong>Key Bands:</strong>
+                        <a href="https://killswitchengage.com/" class="band-link">Killswitch Engage &copy;</a>
+                        <a href="https://asilaydying.com/" class="band-link">As I Lay Dying &copy;</a>
+                        <a href="https://orbitculture.com/" class="band-link">Orbit Culture &copy;</a>
+                        <a href="https://augustburnsred.com/" class="band-link">August Burns Red &copy;</a>
+                    </div>
                 </div>
 
                 <div class="subgenre-card" data-category="modern">
                     <h3 class="subgenre-title">Nu Metal</h3>
                     <p class="subgenre-description">Alternative metal incorporating elements of hip-hop, funk, and
                         industrial music.</p>
-                    <div class="bands-list"><strong>Key Bands:</strong> Korn, Limp Bizkit, Linkin Park, System of a Down
+                    <div class="bands-list">
+                        <strong>Key Bands:</strong>
+                        <a href="https://www.korn.com/" class="band-link">Korn &copy;</a>
+                        <a href="https://limpbizkit.com/" class="band-link">Limp Bizkit &copy;</a>
+                        <a href="https://linkinpark.com/" class="band-link">Linkin Park &copy;</a>
+                        <a href="https://www.systemofadown.com/" class="band-link">System of a Down &copy;</a>
                     </div>
                 </div>
 
                 <div class="subgenre-card" data-category="classic">
                     <h3 class="subgenre-title">Folk Metal</h3>
-                    <p class="subgenre-description">Metal combined with traditional folk instruments and melodies from
-                        various cultures.</p>
-                    <div class="bands-list"><strong>Key Bands:</strong> Finntroll, Eluveitie, Korpiklaani, Amon Amarth
+                    <p class="subgenre-description">Metal combined with traditional folk instruments and melodies
+                        from various cultures.</p>
+                    <div class="bands-list">
+                        <strong>Key Bands:</strong>
+                        <a href="https://www.finntroll.fi/" class="band-link">Finntroll &copy;</a>
+                        <a href="https://www.eluveitie.ch/" class="band-link">Eluveitie &copy;</a>
+                        <a href="https://www.korpiklaani.com/" class="band-link">Korpiklaani &copy;</a>
+                        <a href="https://www.amonamarth.com/" class="band-link">Amon Amarth &copy;</a>
                     </div>
                 </div>
 
@@ -156,55 +223,85 @@
                     <h3 class="subgenre-title">Grindcore</h3>
                     <p class="subgenre-description">Extremely fast, aggressive music with very short songs and
                         politically charged lyrics.</p>
-                    <div class="bands-list"><strong>Key Bands:</strong> Napalm Death, Pig Destroyer, Brutal Truth,
-                        Carcass</div>
+                    <div class="bands-list">
+                        <strong>Key Bands:</strong>
+                        <a href="https://www.napalmdeathofficial.com/" class="band-link">Napalm Death &copy;</a>
+                        <a href="https://pigdestroyer.com/" class="band-link">Pig Destroyer &copy;</a>
+                        <a href="https://brutaltruth.bandcamp.com/" class="band-link">Brutal Truth &copy;</a>
+                        <a href="https://www.carcass.co.uk/" class="band-link">Carcass &copy;</a>
+                    </div>
                 </div>
 
                 <div class="subgenre-card" data-category="progressive">
                     <h3 class="subgenre-title">Post-Metal</h3>
                     <p class="subgenre-description">Atmospheric, experimental metal emphasizing texture and dynamics
                         over traditional song structure.</p>
-                    <div class="bands-list"><strong>Key Bands:</strong> Neurosis, Isis, Cult of Luna, Russian Circles
+                    <div class="bands-list">
+                        <strong>Key Bands:</strong>
+                        <a href="https://neurosis.com/" class="band-link">Neurosis &copy;</a>
+                        <a href="https://isistheband.com/" class="band-link">Isis &copy;</a>
+                        <a href="https://cultofluna.com/" class="band-link">Cult of Luna &copy;</a>
+                        <a href="https://russiancirclesband.com/" class="band-link">Russian Circles &copy;</a>
                     </div>
                 </div>
 
                 <div class="subgenre-card" data-category="modern">
                     <h3 class="subgenre-title">Djent</h3>
-                    <p class="subgenre-description">Rhythmically complex metal characterized by palm-muted, syncopated
-                        riffs and polyrhythms.</p>
-                    <div class="bands-list"><strong>Key Bands:</strong> Meshuggah, Periphery, TesseracT, Animals as
-                        Leaders</div>
+                    <p class="subgenre-description">Rhythmically complex metal characterized by palm-muted,
+                        syncopated riffs and polyrhythms.</p>
+                    <div class="bands-list">
+                        <strong>Key Bands:</strong>
+                        <a href="https://www.meshuggah.net/" class="band-link">Meshuggah &copy;</a>
+                        <a href="https://periphery.net/" class="band-link">Periphery &copy;</a>
+                        <a href="https://tesseractband.co.uk/" class="band-link">TesseracT &copy;</a>
+                        <a href="https://animalsasleaders.org/" class="band-link">Animals as Leaders &copy;</a>
+                    </div>
                 </div>
 
                 <div class="subgenre-card" data-category="extreme">
                     <h3 class="subgenre-title">Melodic Death Metal</h3>
-                    <p class="subgenre-description">Death metal combined with melodic elements, twin guitar harmonies,
-                        and accessible song structures.</p>
-                    <div class="bands-list"><strong>Key Bands:</strong> In Flames, At the Gates, Dark Tranquillity, Arch
-                        Enemy</div>
+                    <p class="subgenre-description">Death metal combined with melodic elements, twin guitar
+                        harmonies, and accessible song structures.</p>
+                    <div class="bands-list">
+                        <strong>Key Bands:</strong>
+                        <a href="https://www.inflames.com/" class="band-link">In Flames &copy;</a>
+                        <a href="https://www.atthegates.se/" class="band-link">At the Gates &copy;</a>
+                        <a href="https://www.darktranquillity.com/" class="band-link">Dark Tranquillity &copy;</a>
+                        <a href="https://www.archenemy.net/" class="band-link">Arch Enemy &copy;</a>
+                    </div>
                 </div>
 
                 <div class="subgenre-card" data-category="classic">
                     <h3 class="subgenre-title">Symphonic Metal</h3>
                     <p class="subgenre-description">Metal incorporating orchestral elements, operatic vocals, and
                         classical music influences.</p>
-                    <div class="bands-list"><strong>Key Bands:</strong> Nightwish, Within Temptation, Epica, Therion
+                    <div class="bands-list">
+                        <strong>Key Bands:</strong>
+                        <a href="https://www.nightwish.com/" class="band-link">Nightwish &copy;</a>
+                        <a href="https://www.within-temptation.com/" class="band-link">Within Temptation &copy;</a>
+                        <a href="https://www.epica.nl/" class="band-link">Epica &copy;</a>
+                        <a href="https://www.therion.se/" class="band-link">Therion &copy;</a>
                     </div>
                 </div>
 
                 <div class="subgenre-card" data-category="modern">
                     <h3 class="subgenre-title">Industrial Metal</h3>
-                    <p class="subgenre-description">Metal combined with industrial music elements, electronic sounds,
-                        and mechanical rhythms.</p>
-                    <div class="bands-list"><strong>Key Bands:</strong> Ministry, Rammstein, Fear Factory, Nine Inch
-                        Nails</div>
+                    <p class="subgenre-description">Metal combined with industrial music elements, electronic
+                        sounds, and mechanical rhythms.</p>
+                    <div class="bands-list">
+                        <strong>Key Bands:</strong>
+                        <a href="https://www.ministryband.com/" class="band-link">Ministry &copy;</a>
+                        <a href="https://www.rammstein.com/" class="band-link">Rammstein &copy;</a>
+                        <a href="https://www.fearfactory.com/" class="band-link">Fear Factory &copy;</a>
+                        <a href="https://www.nin.com/" class="band-link">Nine Inch Nails &copy;</a>
+                    </div>
                 </div>
             </div>
-        </div>
+
     </section>
 
     <section class="stats-section">
-        <div class="container">
+        <div class="container_1">
             <h2 class="section-title">Metal by the Numbers</h2>
             <div class="stats-grid">
                 <div class="stat-item">
@@ -227,38 +324,19 @@
         </div>
     </section>
 
-    <section class="interactive-map">
-        <div class="container">
-            <h2 class="section-title">Global Metal Origins</h2>
-            <div class="map-container">
-                <div class="region scandinavia" onclick="showRegionInfo('Scandinavia')">
-                    <strong>Scandinavia</strong><br>
-                    Black Metal Homeland
-                </div>
-                <div class="region uk" onclick="showRegionInfo('UK')">
-                    <strong>United Kingdom</strong><br>
-                    NWOBHM Birthplace
-                </div>
-                <div class="region germany" onclick="showRegionInfo('Germany')">
-                    <strong>Germany</strong><br>
-                    Power Metal Capital
-                </div>
-                <div class="region usa" onclick="showRegionInfo('USA')">
-                    <strong>United States</strong><br>
-                    Thrash Metal Origins
-                </div>
-                <div class="region brazil" onclick="showRegionInfo('Brazil')">
-                    <strong>Brazil</strong><br>
-                    South American Metal Hub
-                </div>
-            </div>
-        </div>
-    </section>
+
 
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Heavy Metal Universe. Keep the metal spirit alive! 🤘</p>
+        <div class="container_2">
+            <p>&copy; 2025 Heavy Metal Universe. Keep the metal spirit alive! 🤘</p>
             <p>Created with passion for the metal community worldwide.</p>
+
+
+
+            <p>
+                &copy; The band name, images, audio recordings, logos, and all associated intellectual property belong
+                to the
+                bands cited in this website and are protected by copyright and trademark laws. </p>
         </div>
     </footer>
 
