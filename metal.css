@@ -127,6 +127,7 @@ h1 {
 .timeline {
     position: relative;
     margin: 40px 0;
+
 }
 
 .timeline::before {
@@ -138,57 +139,43 @@ h1 {
     width: 3px;
     background: linear-gradient(to bottom, #ff0040, #8b0000, #ff0040);
     transform: translateX(-50%);
+
 }
 
 .timeline-item {
     position: relative;
     margin: 40px 0;
-    display: flex;
+    display: inline;
     align-items: center;
+
 }
 
 .timeline-item:nth-child(odd) {
     flex-direction: row-reverse;
+
 }
 
 .timeline-content {
     padding: 30px;
     border-radius: 15px;
-    width: 45%;
-    margin: 0 5%;
+    width: 44%;
+    margin: 100px 5%;
     transition: all 0.3s ease;
-    background-image: url("img/black_sabbath.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 105%;
     color: rgb(190, 190, 190);
     font-size: 1rem;
     font-weight: 900;
-
 }
 
-.timeline-content_1 {
-    padding: 30px;
-    border-radius: 15px;
-    width: 45%;
-    margin: 0 5%;
-    transition: all 0.3s ease;
-    background-image: url("img/maiden_2.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 105%;
-    color: rgb(250, 250, 250);
-    font-size: 1rem;
-    font-weight: 900;
-
-
-}
 
 .timeline-content:hover {
     transform: scale(1.05);
     box-shadow: 0 10px 30px rgba(255, 0, 64, 0.3);
 
 }
+
 .timeline-content_1:hover {
     transform: scale(1.05);
     box-shadow: 0 10px 30px rgba(255, 0, 64, 0.3);
@@ -203,13 +190,7 @@ h1 {
 
 }
 
-.timeline-year_1 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: rgb(145, 240, 3);
 
-}
 
 .timeline-title {
     color: #fff;
@@ -219,13 +200,7 @@ h1 {
 
 }
 
-.timeline-title_1 {
-    color: #ffffff;
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 10px;
 
-}
 
 .subgenres-grid {
     display: grid;
