@@ -7,11 +7,11 @@ function scrollToSection(sectionId) {
 function filterGenres(category) {
     const cards = document.querySelectorAll('.subgenre-card');
     const buttons = document.querySelectorAll('.filter-btn');
-    
+
     // Update active button
     buttons.forEach(btn => btn.classList.remove('active'));
     event.target.classList.add('active');
-    
+
     // Filter cards
     cards.forEach(card => {
         if (category === 'all' || card.dataset.category === category) {
@@ -56,3 +56,46 @@ document.addEventListener('DOMContentLoaded', () => {
         card.style.transitionDelay = `${index * 0.1}s`;
     });
 });
+
+// Back to Top Button Functionality
+const backToTopButton = document.getElementById('backToTop');
+
+// Show/hide button based on scroll position
+function toggleBackToTopButton() {
+    if (window.pageYOffset > 300) {
+        backToTopButton.classList.add('show');
+    } else {
+        backToTopButton.classList.remove('show');
+    }
+}
+
+// Smooth scroll to top function
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
+// Event listeners
+window.addEventListener('scroll', toggleBackToTopButton);
+backToTopButton.addEventListener('click', scrollToTop);
+
+
+// Throttle scroll events for better performance
+let ticking = false;
+
+function updateBackToTopButton() {
+    toggleBackToTopButton();
+    ticking = false;
+}
+
+function requestTick() {
+    if (!ticking) {
+        requestAnimationFrame(updateBackToTopButton);
+        ticking = true;
+    }
+}
+
+// Use throttled version for better performance
+// window.addEventListener('scroll', requestTick);

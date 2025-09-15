@@ -324,6 +324,62 @@ body {
     background-image: url(img/metal_core_bandas.jpg)
 }
 
+
+
+/* Back to Top Button Styles */
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+#backToTop:hover {
+    background-color: #ff0000;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+#backToTop.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Arrow icon using CSS */
+#backToTop::before {
+    content: "↑";
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Alternative with Unicode arrow */
+.arrow-style::before {
+    content: "▲";
+    font-size: 16px;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    #backToTop {
+        width: 45px;
+        height: 45px;
+        bottom: 15px;
+        right: 15px;
+        font-size: 16px;
+    }
+}
+
 @media (max-width: 768px) {
     h1 {
         font-size: 2.5rem;
