@@ -23,17 +23,6 @@ function filterGenres(category) {
     });
 }
 
-function showRegionInfo(region) {
-    const info = {
-        'Scandinavia': 'Scandinavia gave birth to black metal in the early 1990s, with Norwegian bands like Mayhem, Burzum, and Darkthrone pioneering the raw, atmospheric sound that defined the genre.',
-        'UK': 'The UK launched the New Wave of British Heavy Metal (NWOBHM) in the late 1970s, with bands like Iron Maiden, Judas Priest, and Saxon influencing metal worldwide.',
-        'Germany': 'Germany became the epicenter of power metal with bands like Helloween and Blind Guardian, known for their melodic, fantasy-themed approach to metal.',
-        'USA': 'The United States birthed thrash metal in the 1980s with the "Big Four": Metallica, Megadeth, Slayer, and Anthrax, revolutionizing metal with speed and aggression.',
-        'Brazil': 'Brazil developed a unique metal scene with bands like Sepultura and Angra, blending metal with local musical influences and becoming South America\'s metal capital.'
-    };
-    
-    alert(info[region]);
-}
 
 // Add CSS animation keyframes
 const style = document.createElement('style');
