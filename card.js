@@ -10,7 +10,7 @@ function filterGenres(category) {
 
     // Update active button
     buttons.forEach(btn => btn.classList.remove('active'));
-    event.target.classList.add('active');
+    Event.target.classList.add('active');
 
     // Filter cards
     cards.forEach(card => {

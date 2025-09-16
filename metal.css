@@ -30,8 +30,6 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="%23333" stroke-width="0.5" opacity="0.3"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
-    animation: pulse 4s ease-in-out infinite;
 }
 
 @keyframes pulse {
@@ -103,7 +101,7 @@ body {
     font-size: 2.5rem;
     position: relative;
     margin-bottom: 3rem;
-    margin-left: 115px;
+    margin-left: 120px;
     color: #ebe1e4;
     text-shadow: 0 0 10px #ff0040;
 }
@@ -307,12 +305,18 @@ body {
     background: linear-gradient(135deg, rgba(255, 0, 64, 0.1), rgba(139, 0, 0, 0.1));
 }
 
+.stat-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(255, 0, 64, 0.4);
+}
+
 .stat-number {
     font-size: 3rem;
     font-weight: bold;
     color: #ff0040;
     display: block;
     margin-bottom: 10px;
+
 }
 
 
@@ -324,60 +328,22 @@ body {
     background-image: url(img/metal_core_bandas.jpg)
 }
 
-
-
-/* Back to Top Button Styles */
-#backToTop {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    background-color: #ff0000;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 18px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    opacity: 0;
+.back-to-top {
+    background: linear-gradient(135deg, rgba(255, 0, 64, 0.1), rgba(139, 0, 0, 0.1));
+    color: rgb(3, 3, 3);
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 3rem;
+    margin-bottom: 20px;
     transition: all 0.3s ease;
-    z-index: 1000;
+    border-color: transparent;
 }
 
-#backToTop:hover {
-    background-color: #ff0000;
+.back-to-top:hover {
+    background: rgba(255, 0, 64, 0.4);
     transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
-}
-
-#backToTop.show {
-    opacity: 1;
-    visibility: visible;
-}
-
-/* Arrow icon using CSS */
-#backToTop::before {
-    content: "↑";
-    font-size: 24px;
-    font-weight: bold;
-}
-
-/* Alternative with Unicode arrow */
-.arrow-style::before {
-    content: "▲";
-    font-size: 16px;
-}
-
-/* Mobile responsive */
-@media (max-width: 768px) {
-    #backToTop {
-        width: 45px;
-        height: 45px;
-        bottom: 15px;
-        right: 15px;
-        font-size: 16px;
-    }
+    box-shadow: 0 15px 40px rgba(255, 0, 64, 0.4);
 }
 
 @media (max-width: 768px) {
