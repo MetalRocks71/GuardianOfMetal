@@ -8,18 +8,39 @@
     <script src="card.js"></script>
     <title>Heavy Metal Universe - The Complete Guide</title>
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <script>
+        console.log('Script loaded'); // Check browser console (F12)
+    </script>
 
 </head>
 
 <body>
     <nav class="hero">
         <div class="hero-image">
+            <!-- Burger Menu Button -->
+            <button id="burger-menu" onclick="toggleMenu('open')" aria-label="Open navigation menu">
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+            </button>
+
             <div class="hero-content">
                 <button class="nav-button" onclick="scrollToSection('timeline')">History</button>
                 <button class="nav-button" onclick="scrollToSection('subgenres')">Metal Subgenres</button>
             </div>
         </div>
     </nav>
+
+    <!-- ADD THIS: Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-nav-buttons">
+            <button class="mobile-nav-button" onclick="scrollToSection('timeline')">History</button>
+            <button class="mobile-nav-button" onclick="scrollToSection('subgenres')">Metal Subgenres</button>
+        </div>
+    </div>
+
+    <!-- Overlay close button -->
+    <div class="overlay" id="overlay"></div>
 
     <section id="timeline" class="section">
         <div class="container">
@@ -40,15 +61,15 @@
                         <div class="image-container">
                             <div class="image-separator">
                                 <img src="img/black_sabbath.jpg" alt="Metal Music" class="separator-image">
-                               
+
                             </div>
                             <div class="image-separator">
                                 <img src="img/deeppurple.jpg" alt="Metal Music" class="separator-image">
-                                
+
                             </div>
                             <div class="image-separator">
                                 <img src="img/ledzeppelin.jpg" alt="Metal Music" class="separator-image">
-                                
+
                             </div>
                         </div>
                     </div>
@@ -69,6 +90,21 @@
                             hooks and theatrical presentation.
                             Key influences: Punk rock, progressive rock, classical music, social/political issues
                         </p>
+                        <!-- image separator section -->
+                        <div class="image-container">
+                            <div class="image-separator">
+                                <img src="img/Metallica.jpg" alt="Metal Music" class="separator-image">
+
+                            </div>
+                            <div class="image-separator">
+                                <img src="img/Slayer.jpg" alt="Metal Music" class="separator-image">
+
+                            </div>
+                            <div class="image-separator">
+                                <img src="img/Anthrax.jpg" alt="Metal Music" class="separator-image">
+
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -89,6 +125,20 @@
                             melancholic approaches.
                             Key influences: Horror, mythology, anti-religious sentiment, atmospheric music, punk ethics
                         </p>
+                        <div class="image-container">
+                            <div class="image-separator">
+                                <img src="img/MyDyingBride.jpg" alt="Metal Music" class="separator-image">
+
+                            </div>
+                            <div class="image-separator">
+                                <img src="img/ParadiseLost.jpg" alt="Metal Music" class="separator-image">
+
+                            </div>
+                            <div class="image-separator">
+                                <img src="img/Anthrax.jpg" alt="Metal Music" class="separator-image">
+
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -109,6 +159,20 @@
                             vocals.
                             Key influences: Hip-hop, electronic music, hardcore punk, world music, orchestral
                             arrangements</p>
+                        <div class="image-container">
+                            <div class="image-separator">
+                                <img src="img/Tool.jpg" alt="Metal Music" class="separator-image">
+
+                            </div>
+                            <div class="image-separator">
+                                <img src="img/Mastodon.jpg" alt="Metal Music" class="separator-image">
+
+                            </div>
+                            <div class="image-separator">
+                                <img src="img/Killswitch Engage.jpg" alt="Metal Music" class="separator-image">
+
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -131,6 +195,20 @@
                             even pop, creating hybrid subgenres.
                             Key influences: Internet culture, global music access, vintage gear fetishism,
                             genre-agnosticism, social media promotion</p>
+                        <div class="image-container">
+                            <div class="image-separator">
+                                <img src="img/Whitechapel.jpg" alt="Metal Music" class="separator-image">
+
+                            </div>
+                            <div class="image-separator">
+                                <img src="img/The Black Dahlia Murder.jpg" alt="Metal Music" class="separator-image">
+
+                            </div>
+                            <div class="image-separator">
+                                <img src="img/orbitCulture.jpg" alt="Metal Music" class="separator-image">
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -10,7 +10,7 @@ function filterGenres(category) {
 
     // Update active button
     buttons.forEach(btn => btn.classList.remove('active'));
-    Event.target.classList.add('active');
+    event.target.classList.add('active');
 
     // Filter cards
     cards.forEach(card => {
@@ -96,6 +96,37 @@ function requestTick() {
         ticking = true;
     }
 }
+
+
+
+// Burger Menu Functionality
+function toggleMenu(action) {
+    const burgerMenu = document.getElementById('burger-menu');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const overlay = document.getElementById('overlay');
+
+    const isOpening = action === 'open';
+
+    burgerMenu.classList.toggle('active', isOpening);
+    mobileMenu.classList.toggle('active', isOpening);
+    overlay.classList.toggle('active', isOpening);
+    document.body.style.overflow = isOpening ? 'hidden' : 'auto';
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const overlay = document.getElementById('overlay');
+    const mobileButtons = document.querySelectorAll('.mobile-nav-button');
+
+    overlay.addEventListener('click', () => toggleMenu('close'));
+
+    mobileButtons.forEach(button => {
+        button.addEventListener('click', () => toggleMenu('close'));
+    });
+});
+
+
+
+
 
 // Use throttled version for better performance
 // window.addEventListener('scroll', requestTick);
