@@ -99,7 +99,7 @@ function requestTick() {
 
 
 
-// Burger Menu Functionality
+
 function toggleMenu(action) {
     const burgerMenu = document.getElementById('burger-menu');
     const mobileMenu = document.getElementById('mobile-menu');
