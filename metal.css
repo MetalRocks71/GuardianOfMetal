@@ -10,6 +10,7 @@ body {
     color: #fff;
     line-height: 1.6;
     overflow-x: hidden;
+    transition: overflow 0.3s;
 }
 
 .hero-image {
@@ -56,6 +57,25 @@ body {
     margin-bottom: 2rem;
 }
 
+/* Overlay styles */
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    z-index: 1000;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
 /* Burger Menu Button */
 #burger-menu {
     position: absolute;
@@ -96,6 +116,24 @@ body {
 }
 
 /* Mobile Menu */
+#mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100vw;
+    width: 80vw;
+    max-width: 400px;
+    height: 100vh;
+    background: #222;
+    color: #fff;
+    transition: right 0.3s;
+    z-index: 1001;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#mobile-menu.active {
+    right: 0;
+}
+
 .mobile-menu {
     position: fixed;
     top: 0;
@@ -157,18 +195,6 @@ body {
 .overlay.active {
     opacity: 1;
     visibility: visible;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    #burger-menu {
-        display: flex;
-    }
-
-    .hero-content {
-        display: none;
-        /* Hide desktop buttons on mobile */
-    }
 }
 
 /* Navigation button */
@@ -498,6 +524,15 @@ body {
 }
 
 @media (max-width: 768px) {
+    #burger-menu {
+        display: flex;
+    }
+
+    .hero-content {
+        display: none;
+        /* Hide desktop buttons on mobile */
+    }
+
     h1 {
         font-size: 2.5rem;
     }
