@@ -71,10 +71,15 @@ function toggleBackToTopButton() {
 
 // Smooth scroll to top function
 function scrollToTop() {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
+    const scrollStep = -window.scrollY / (2000 / 15); // Slower scroll (adjust 1000 for speed)
+
+    function step() {
+        if (window.scrollY !== 0) {
+            window.scrollBy(0, scrollStep);
+            requestAnimationFrame(step);
+        }
+    }
+    requestAnimationFrame(step);
 }
 
 // Event listeners
