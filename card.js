@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Back to Top Button Functionality
-const backToTopButton = document.getElementById('backToTop');
+const backToTopButton = document.getElementsByIClass('backToTopButton');
 
 // Show/hide button based on scroll position
 function toggleBackToTopButton() {

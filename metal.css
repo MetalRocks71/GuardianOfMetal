@@ -372,7 +372,7 @@ body {
 }
 
 /* Back to top button */
-.back-to-top {
+.backToTopButton {
     background: linear-gradient(135deg, rgba(255, 0, 64, 0.1), rgba(139, 0, 0, 0.1));
     color: rgb(3, 3, 3);
     padding: 10px 20px;
@@ -384,7 +384,7 @@ body {
     border-color: transparent;
 }
 
-.back-to-top:hover {
+.backToTopButton:hover {
     background: rgba(255, 0, 64, 0.4);
     transform: translateY(-2px);
     box-shadow: 0 15px 40px rgba(255, 0, 64, 0.4);
