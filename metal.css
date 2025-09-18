@@ -73,7 +73,7 @@ body {
     /* Remove the 30% margin for inline layout */
 }
 
-.history:hover{
+.history:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 25px rgba(255, 0, 64, 0.5);
 }
@@ -119,7 +119,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    
+
 }
 
 .container_2 {
@@ -137,7 +137,7 @@ body {
     padding: 80px 0;
 }
 
-.section-title{
+.section-title {
     font-size: 2.5rem;
     text-align: center !important;
     margin-bottom: 3rem;
@@ -395,21 +395,28 @@ body {
     box-shadow: 0 15px 40px rgba(255, 0, 64, 0.4);
 }
 
-/* ==========================================================================
-   RESPONSIVE MEDIA QUERIES FOR HEAVY METAL WEBSITE
-   ========================================================================== */
+/.section-title {
+    text-align: center !important;
+    margin-left: 0 !important;
+    position: static !important;
+}
+
+.section-title_2 {
+    text-align: center !important;
+    margin-left: 0 !important;
+}
 
 /* Extra Large Screens (1440px and up) */
 @media (min-width: 1440px) {
     .container_1 {
         max-width: 1400px;
     }
-    
+
     .section-title {
         font-size: 3rem;
-        margin-left: 900px;
+        text-align: center;
     }
-    
+
     .subgenres-grid {
         grid-template-columns: repeat(4, 1fr);
     }
@@ -418,9 +425,9 @@ body {
 /* Large Screens (1200px - 1439px) */
 @media (max-width: 1439px) {
     .section-title {
-        margin-left: 500px;
+        text-align: center;
     }
-    
+
     .separator-image {
         margin-right: 300px;
     }
@@ -431,23 +438,23 @@ body {
     .hero-image {
         height: 25vh;
     }
-    
+
     .section-title {
         font-size: 2.2rem;
-        margin-left: 300px;
+        text-align: center;
     }
-    
+
     .separator-image {
         width: 150px;
         height: 150px;
         margin-right: 200px;
     }
-    
+
     .subgenres-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 25px;
     }
-    
+
     .timeline-content {
         width: 95%;
         margin: 80px 2.5%;
@@ -462,7 +469,7 @@ body {
         gap: 30px;
         padding: 20px 3%;
     }
-    
+
     .hero-content,
     .hero-content_1 {
         align-items: center;
@@ -470,45 +477,44 @@ body {
         flex: none;
         width: 100%;
     }
-    
+
     .section-title {
         font-size: 2rem;
-        margin-left: 0;
         text-align: center;
     }
-    
+
     .section-title_2 {
         font-size: 2rem;
     }
-    
+
     .container_2 {
         max-width: 90%;
         padding: 0 15px;
     }
-    
+
     .separator-image {
         width: 120px;
         height: 120px;
         margin-right: 0;
         margin: 0 auto;
     }
-    
+
     .image-container {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .timeline-content {
         width: 100%;
         margin: 60px 0;
         padding: 25px;
     }
-    
+
     .stats-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
     }
-    
+
     .stat-number {
         font-size: 2.5rem;
     }
@@ -519,97 +525,97 @@ body {
     .hero-image {
         height: 30vh;
     }
-    
+
     .hero-container {
         padding: 15px 5%;
         gap: 20px;
     }
-    
+
     .nav-button {
         padding: 12px 25px;
         font-size: 1rem;
         margin: 8px;
     }
-    
+
     .history {
         padding: 12px 25px;
         font-size: 1rem;
     }
-    
+
     .section {
         padding: 60px 0;
     }
-    
+
     .section-title,
     .section-title_2 {
         font-size: 1.8rem;
         margin-bottom: 2rem;
     }
-    
+
     .subtitle {
         font-size: 1.3rem;
         margin-bottom: 1.5rem;
     }
-    
+
     .container_1 {
         padding: 0 15px;
     }
-    
+
     .container_2 {
         padding: 0 10px;
         border-radius: 3%;
     }
-    
+
     .subgenres-grid {
         grid-template-columns: 1fr;
         gap: 20px;
         margin-top: 30px;
     }
-    
+
     .subgenre-card {
         padding: 25px;
         border-radius: 10px;
     }
-    
+
     .subgenre-title {
         font-size: 1.3rem;
         margin-bottom: 12px;
     }
-    
+
     .timeline-content {
         padding: 20px;
         margin: 40px 0;
         background-size: 100% 110%;
     }
-    
+
     .timeline-year {
         font-size: 1.3rem;
     }
-    
+
     .timeline-title {
         font-size: 1.3rem;
     }
-    
+
     .stats-grid {
         grid-template-columns: 1fr;
         gap: 25px;
     }
-    
+
     .stat-item {
         padding: 25px;
         border-radius: 10px;
     }
-    
+
     .stat-number {
         font-size: 2rem;
     }
-    
+
     .filter-btn {
         padding: 8px 16px;
         font-size: 0.9rem;
         margin: 3px;
     }
-    
+
     .backToTopButton {
         font-size: 2.5rem;
         padding: 8px 16px;
@@ -621,101 +627,99 @@ body {
     .hero-image {
         height: 35vh;
     }
-    
+
     .hero-container {
         padding: 10px 3%;
         gap: 15px;
     }
-    
+
     .nav-button {
         padding: 10px 20px;
         font-size: 0.9rem;
         margin: 5px;
         border-radius: 3px;
-        flex-direction: column;
     }
-    
+
     .history {
         padding: 10px 20px;
         font-size: 0.9rem;
         border-radius: 3%;
-        flex-direction: column;
     }
-    
+
     .section {
         padding: 40px 0;
     }
-    
+
     .section-title,
     .section-title_2 {
         font-size: 1.5rem;
         margin-bottom: 1.5rem;
     }
-    
+
     .subtitle {
         font-size: 1.1rem;
         margin-bottom: 1rem;
     }
-    
+
     .container_1,
     .container_2 {
         padding: 0 10px;
     }
-    
+
     .subgenre-card {
         padding: 20px;
         margin: 0 5px;
     }
-    
+
     .subgenre-title {
         font-size: 1.2rem;
         margin-bottom: 10px;
     }
-    
+
     .timeline-content {
         padding: 15px;
         margin: 30px 0;
         font-size: 0.9rem;
     }
-    
+
     .timeline-year {
         font-size: 1.2rem;
     }
-    
+
     .timeline-title {
         font-size: 1.2rem;
     }
-    
+
     .separator-image {
         width: 100px;
         height: 100px;
     }
-    
+
     .stat-item {
         padding: 20px;
     }
-    
+
     .stat-number {
         font-size: 1.8rem;
     }
-    
+
     .filter-btn {
         padding: 6px 12px;
         font-size: 0.8rem;
         margin: 2px;
         border-radius: 20px;
     }
-    
+
     .bands-list {
         font-size: 0.8rem;
     }
-    
+
     .backToTopButton {
         font-size: 2rem;
         padding: 6px 12px;
         border-radius: 15px;
     }
-    
+
     .footer {
         padding: 30px 0;
     }
@@ -726,46 +730,46 @@ body {
     .hero-image {
         height: 40vh;
     }
-    
+
     .hero-container {
         padding: 8px 2%;
     }
-    
+
     .nav-button,
     .history {
         padding: 8px 15px;
         font-size: 0.8rem;
         margin: 3px;
     }
-    
+
     .section-title,
     .section-title_2 {
         font-size: 1.3rem;
     }
-    
+
     .subtitle {
         font-size: 1rem;
     }
-    
+
     .subgenre-card {
         padding: 15px;
         margin: 0 2px;
     }
-    
+
     .timeline-content {
         padding: 12px;
         margin: 20px 0;
     }
-    
+
     .separator-image {
         width: 80px;
         height: 80px;
     }
-    
+
     .stat-number {
         font-size: 1.5rem;
     }
-    
+
     .backToTopButton {
         font-size: 1.8rem;
     }
@@ -776,23 +780,24 @@ body {
     .hero-image {
         height: 50vh;
     }
-    
+
     .section {
         padding: 50px 0;
     }
-    
+
     .stats-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 /* High DPI/Retina Displays */
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
     .hero-image {
         background-size: cover;
         background-position: center;
     }
-    
+
     .footer {
         background-size: cover;
         background-position: center;
@@ -801,6 +806,7 @@ body {
 
 /* Reduce Motion for Accessibility */
 @media (prefers-reduced-motion: reduce) {
+
     .timeline-content:hover,
     .timeline-content_1:hover,
     .subgenre-card:hover,
@@ -811,11 +817,11 @@ body {
     .image-separator:hover {
         transform: none;
     }
-    
+
     .subgenre-card::before {
         transition: none;
     }
-    
+
     * {
         transition-duration: 0.01ms !important;
         animation-duration: 0.01ms !important;
@@ -825,23 +831,24 @@ body {
 
 /* Print Styles */
 @media print {
+
     .nav-button,
     .history,
     .backToTopButton,
     .filter-buttons {
         display: none;
     }
-    
+
     .hero-image,
     .footer {
         background: none;
     }
-    
+
     body {
         color: black;
         background: white;
     }
-    
+
     .section-title,
     .section-title_2,
     .timeline-title,
