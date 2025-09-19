@@ -522,25 +522,6 @@ body {
     background-color: rgb(0, 0, 0);
 }
 
-/* Back to top button */
-.backToTopButton {
-    background: linear-gradient(135deg, rgba(255, 0, 64, 0.1), rgba(139, 0, 0, 0.1));
-    color: rgb(3, 3, 3);
-    padding: 10px 20px;
-    border-radius: 20px;
-    text-decoration: none;
-    font-size: 3rem;
-    margin-bottom: 20px;
-    transition: all 0.3s ease;
-    border-color: transparent;
-}
-
-.backToTopButton:hover {
-    background: rgba(255, 0, 64, 0.4);
-    transform: translateY(-2px);
-    box-shadow: 0 15px 40px rgba(255, 0, 64, 0.4);
-}
-
 .section-title {
     text-align: center !important;
     margin-left: 0 !important;
@@ -1001,5 +982,221 @@ body {
     .subgenre-title {
         color: black;
         text-shadow: none;
+    }
+}
+
+/* Large Desktop (1200px and up) */
+@media (min-width: 1200px) {
+    .container-form {
+        width: 450px;
+    }
+
+    .form {
+        padding: 40px 50px;
+    }
+
+    .form-control input {
+        font-size: 15px;
+        padding: 12px;
+    }
+
+    .form button {
+        font-size: 1.3rem;
+        padding: 18px;
+    }
+}
+
+/* Desktop (992px to 1199px) */
+@media (max-width: 1199px) and (min-width: 992px) {
+    .container-form {
+        width: 400px;
+    }
+}
+
+/* Tablet Landscape (768px to 991px) */
+@media (max-width: 991px) and (min-width: 768px) {
+    .container-form {
+        width: 350px;
+        max-width: 85%;
+    }
+
+    .form {
+        padding: 30px 35px;
+    }
+
+    .form-control input {
+        width: 75%;
+        margin-left: 15px;
+    }
+
+    .toggle-password {
+        right: 8px;
+    }
+}
+
+/* Tablet Portrait (600px to 767px) */
+@media (max-width: 767px) and (min-width: 600px) {
+    .container-form {
+        width: 320px;
+        max-width: 90%;
+    }
+
+    .form {
+        padding: 25px 30px;
+    }
+
+    .form-control {
+        margin-bottom: 15px;
+    }
+
+    .form-control input {
+        width: 80%;
+        margin-left: 10px;
+        font-size: 14px;
+    }
+
+    .form-control label {
+        font-size: 14px;
+        height: 45px;
+        line-height: 25px;
+    }
+
+    .toggle-password {
+        right: 6px;
+        font-size: 14px;
+    }
+
+    .form button {
+        padding: 12px;
+        font-size: 1.1rem;
+    }
+}
+
+/* Mobile Landscape (480px to 599px) */
+@media (max-width: 599px) and (min-width: 480px) {
+    .container-form {
+        width: 300px;
+        max-width: 95%;
+    }
+
+    .form {
+        padding: 20px 25px;
+    }
+
+    .form-control {
+        margin-bottom: 12px;
+        padding-bottom: 15px;
+    }
+
+    .form-control input {
+        width: 85%;
+        margin-left: 8px;
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    .form-control label {
+        height: 35px;
+        line-height: 15px;
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .toggle-password {
+        right: 5px;
+        font-size: 13px;
+        padding: 3px;
+    }
+
+    .form button {
+        padding: 10px;
+        font-size: 1rem;
+        border-radius: 15px;
+    }
+}
+
+/* Mobile Portrait (320px to 479px) */
+@media (max-width: 479px) {
+    .container-form {
+        width: 280px;
+        max-width: 95%;
+        margin: 10px auto;
+    }
+
+    .form {
+        padding: 15px 20px;
+    }
+
+    .form-control {
+        margin-bottom: 10px;
+        padding-bottom: 12px;
+    }
+
+    .form-control input {
+        width: 90%;
+        margin-left: 5px;
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .form-control label {
+        height: 35px;
+        line-height: 15px;
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .toggle-password {
+        right: 3px;
+        font-size: 12px;
+        padding: 2px;
+    }
+
+    .form button {
+        padding: 8px;
+        font-size: 0.9rem;
+        border-radius: 12px;
+        margin-top: 15px;
+    }
+
+    .form-control small {
+        font-size: 11px;
+    }
+}
+
+/* Extra Small Mobile (below 320px) */
+@media (max-width: 319px) {
+    .container-form {
+        width: 260px;
+        max-width: 98%;
+    }
+
+    .form {
+        padding: 10px 15px;
+    }
+
+    .form-control input {
+        width: 95%;
+        margin-left: 2px;
+        padding: 6px;
+        font-size: 11px;
+    }
+
+    .form-control label {
+        height: 30px;
+        line-height: 10px;
+        font-size: 11px;
+        padding: 5px;
+    }
+
+    .toggle-password {
+        right: 2px;
+        font-size: 11px;
+    }
+
+    .form button {
+        padding: 6px;
+        font-size: 0.8rem;
+        border-radius: 10px;
     }
 }
