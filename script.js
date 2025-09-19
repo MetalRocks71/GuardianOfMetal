@@ -23,7 +23,7 @@ function filterGenres(category, event) {
   });
 }
 
-// form validator
+/* form validator */
 
 const form = document.getElementById('form');
 const username = document.getElementById('username');
