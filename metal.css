@@ -390,10 +390,6 @@ body {
 
 
 
-:root {
-    --successColor: hsla(105, 92%, 34%, 1);
-    --errorColor: hsla(0, 76%, 47%, 1);
-}
 
 
 .container-form {
@@ -479,33 +475,11 @@ body {
     border-color: hsla(0, 0%, 0%, 0.8);
 }
 
-.form-control.success input {
-    border-color: var(--successColor);
-}
-
-.form-control.error input {
-    border-color: var(--errorColor);
-}
-
-.form-control small {
-    display: flex;
-    padding-top: 5px;
-    color: var(--errorColor);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    visibility: hidden;
-}
-
-.form-control.error small {
-    visibility: visible;
-}
-
 .form button {
     background-color: rgb(51, 152, 219);
     cursor: pointer;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
-    width: 10%;
+    width: 10;
     padding: 5px;
     margin-top: 10px;
     color: #fff;
@@ -516,7 +490,7 @@ body {
 }
 
 .form button:hover {
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(255, 0, 64, 0.4);
 }
 
 .section-title {
