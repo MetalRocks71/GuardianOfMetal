@@ -1,26 +1,21 @@
+/*scroll to subgenres card*/
+
 function scrollToSection(sectionId) {
-  document.getElementById(sectionId).scrollIntoView({
-    behavior: 'smooth'
-  });
-}
-
-function filterGenres(category, event) {
-  const cards = document.querySelectorAll('.subgenre-card');
-  const buttons = document.querySelectorAll('.filter-btn');
-
-  // Update active button
-  buttons.forEach(btn => btn.classList.remove('active'));
-  event.target.classList.add('active');
-
-  // Filter cards
-  cards.forEach(card => {
-    if (category === 'all' || card.dataset.category === category) {
-      card.style.display = 'block';
-      card.style.animation = 'fadeIn 0.5s ease';
-    } else {
-      card.style.display = 'none';
+  const element = document.getElementById(sectionId);
+  if (element) {
+    try {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+        inline: 'nearest'
+      });
+    } catch (e) {
+      // Fallback for older Samsung browsers
+      element.scrollIntoView(true);
     }
-  });
+  } else {
+    console.error('Element with ID "' + sectionId + '" not found');
+  }
 }
 
 /*registration form scroll to */
