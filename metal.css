@@ -28,7 +28,7 @@ body {
     background-repeat: no-repeat;
     position: relative;
     min-height: 50vh;
- 
+
 }
 
 .hero-image::before {
@@ -41,7 +41,7 @@ body {
     z-index: 1;
 }
 
-    /* Centers content vertically */
+/* Centers content vertically */
 .hero-container {
     display: flex;
     flex-direction: row;
