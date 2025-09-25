@@ -23,6 +23,17 @@ function filterGenres(category, event) {
   });
 }
 
+/*registration form scroll to */
+function scrollToSection(sectionId) {
+    const element = document.getElementById(sectionId);
+    if (element) {
+        element.scrollIntoView({ 
+            behavior: 'smooth',
+            block: 'start'
+        });
+    }
+}
+
 /* form validator */
 
 const form = document.getElementById('form');
@@ -124,4 +135,13 @@ function togglePassword(inputId) {
     input.type = 'password';
     button.textContent = '👁️'; // Change to show icon
   }
+}
+
+/*scroll to the top*/
+
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
 }

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
+
 * {
     margin: 0;
     padding: 0;
@@ -19,25 +20,27 @@ body {
 }
 
 
-
 .hero-image {
+    background-image: url('img/Metal_Injection.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     position: relative;
-    width: 100%;
-    height: 20vh;
-    display: flex;
-    align-items: center;
-    /* Centers content vertically */
+    min-height: 50vh;
+ 
 }
 
-.hero::before {
+.hero-image::before {
     content: '';
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+    z-index: 1;
 }
 
+    /* Centers content vertically */
 .hero-container {
     display: flex;
     flex-direction: row;
@@ -60,34 +63,13 @@ body {
     /* Takes up available space */
 }
 
-.history {
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    text-align: center;
-    font-size: 1.1rem;
-    background: linear-gradient(45deg, #ff0040, #8b0000);
-    border: none;
-    padding: 15px 30px;
-    border-radius: 5%;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(255, 0, 64, 0.3);
-    cursor: pointer;
-    /* Remove the 30% margin for inline layout */
-}
-
-.history:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(255, 0, 64, 0.5);
-}
 
 .hero-content_1 {
     z-index: 2;
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
     gap: 15px;
     flex: 1;
     /* Takes up available space */
@@ -127,12 +109,12 @@ body {
 }
 
 .container_2 {
-    background-color: #000;
     max-width: 800px;
     margin: 0 auto;
     padding: 0 20px;
     color: red;
     border-radius: 5%;
+    background-color: #000;
 
 }
 
