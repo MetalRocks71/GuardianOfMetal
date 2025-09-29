@@ -19,7 +19,7 @@ function scrollToSection(sectionId) {
 }
 
 /*registration form scroll to */
-function scrollToSection(sectionId) {
+function scrollToSectionForm(sectionId) {
   const element = document.getElementById(sectionId);
   if (element) {
     element.scrollIntoView({
@@ -29,36 +29,36 @@ function scrollToSection(sectionId) {
   }
 }
 /*Filter Genres and subgenres*/
-        function filterGenres(genre, event) {
-            console.log('Filter called with genre:', genre); // Debug log
-            
-            // Remove active class from all buttons
-            const buttons = document.querySelectorAll('.filter-btn');
-            buttons.forEach(btn => btn.classList.remove('active'));
-            
-            // Add active class to clicked button
-            event.target.classList.add('active');
-            
-            // Get all subgenre items
-            const items = document.querySelectorAll('.subgenre-card')
-            console.log('Found items:', items.length); // Debug log
-            
-            // Filter items based on selected genre
-            items.forEach(item => {
-                const itemGenre = item.getAttribute('data-category')
-                console.log('Item genre:', itemGenre); // Debug log
-                
-                if (genre === 'all') {
-                    item.style.display = 'block';
-                } else {
-                    if (itemGenre === genre) {
-                        item.style.display = 'block';
-                    } else {
-                        item.style.display = 'none';
-                    }
-                }
-            });
-        }
+function filterGenres(genre, event) {
+  console.log('Filter called with genre:', genre); // Debug log
+
+  // Remove active class from all buttons
+  const buttons = document.querySelectorAll('.filter-btn');
+  buttons.forEach(btn => btn.classList.remove('active'));
+
+  // Add active class to clicked button
+  event.target.classList.add('active');
+
+  // Get all subgenre items
+  const items = document.querySelectorAll('.subgenre-card')
+  console.log('Found items:', items.length); // Debug log
+
+  // Filter items based on selected genre
+  items.forEach(item => {
+    const itemGenre = item.getAttribute('data-category')
+    console.log('Item genre:', itemGenre); // Debug log
+
+    if (genre === 'all') {
+      item.style.display = 'block';
+    } else {
+      if (itemGenre === genre) {
+        item.style.display = 'block';
+      } else {
+        item.style.display = 'none';
+      }
+    }
+  });
+}
 
 
 
