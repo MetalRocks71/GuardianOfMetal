@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=New+Rocker&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +10,7 @@
 html,
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%);
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100% 100%);
     color: #fff;
     line-height: 1.6;
     overflow-x: hidden;
@@ -19,15 +20,29 @@ body {
     scroll-behavior: smooth;
 }
 
+.hero-image .HMisLaw{
 
+  font-family: "Metal Mania", system-ui;
+  font-weight: 400;
+  font-style: normal;
+    background: linear-gradient(rgb(255, 0, 0), rgb(13, 13, 39));
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+  position: relative;
+  text-align: center;
+  font-size: 200px;
+
+
+}
 
 .hero-image {
-    background-image: url('img/Metal_Injection.jpg');
+background-image: url(img/wandtattoo-heavy-metal_2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    min-height: 55vh;
+    min-height: 20vh;
 
 }
 
@@ -125,6 +140,7 @@ body {
 }
 
 .section-title {
+    font-family: "Metal Mania", system-ui;
     font-size: 2.5rem;
     text-align: center !important;
     margin-bottom: 3rem;
@@ -364,6 +380,9 @@ body {
     text-align: left;
     font-size: 1.3rem;
 }
+.sam-dunn-1 a{
+    color: rgba(255, 0, 64, 0.4);
+}
 
 .footer {
     background: #000;
@@ -373,7 +392,10 @@ body {
 }
 
 
+.register{
 
+    font-family: "Metal Mania", system-ui;
+}
 
 
 .container-form {
