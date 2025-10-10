@@ -512,222 +512,121 @@ background-image: url(img/wandtattoo-heavy-metal_2.jpg);
 
 /* Media Queries for Responsive Design */
 
-/* Tablet Portrait and Small Desktop - 748px and down */
-@media (max-width: 748px) {
+/* Tablet and below (768px and down) */
+@media screen and (max-width: 768px) {
+    .hero-image .HMisLaw {
+        font-size: 80px;
+    }
+
     .hero-container {
         flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 30px;
-        padding: 20px 3%;
+        padding: 15px 3%;
     }
 
     .hero-content,
     .hero-content_1 {
         align-items: center;
-        width: 100%;
+        text-align: center;
     }
 
-    .history {
-        width: 80%;
-        margin: 0 auto;
-        font-size: 1rem;
+    .subtitle {
+        font-size: 1.2rem;
+    }
+
+    .nav-button {
         padding: 12px 25px;
+        font-size: 1rem;
+    }
+
+    .section {
+        padding: 50px 0;
     }
 
     .section-title,
     .section-title_2 {
         font-size: 2rem;
-        margin-bottom: 2rem;
     }
 
     .timeline-content {
         width: 95%;
-        margin: 60px 2.5%;
+        margin: 50px 2.5%;
         padding: 20px;
-        font-size: 0.9rem;
-    }
-
-    .separator-image {
-        width: 140px;
-        height: 140px;
-        margin-right: 0;
-        margin: 0 auto 20px;
-    }
-
-    .image-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .subgenres-grid {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 20px;
-    }
-
-    .stats-grid {
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-        gap: 20px;
-    }
-
-    .stat-number {
-        font-size: 2.5rem;
-    }
-
-    .sam-dunn {
-        font-size: 1.7rem;
-        text-align: center;
-    }
-
-    .sam-dunn-1 {
-        font-size: 1.1rem;
-        text-align: center;
-    }
-}
-
-/* Mobile Landscape and Small Tablets - 600px and down */
-@media (max-width: 600px) {
-    .hero-image {
-        height: 15vh;
-    }
-
-    .hero-container {
-        padding: 15px 5%;
-        gap: 20px;
-    }
-
-    .nav-button {
-        padding: 12px 20px;
-        font-size: 1rem;
-        margin: 8px 5px;
-    }
-
-    .history {
-        width: 90%;
-        padding: 10px 20px;
-        font-size: 0.95rem;
-    }
-
-    .section {
-        padding: 60px 0;
-    }
-
-    .section-title,
-    .section-title_2 {
-        font-size: 1.8rem;
-        margin-bottom: 1.5rem;
-    }
-
-    .timeline-content {
-        width: 98%;
-        margin: 40px 1%;
-        padding: 15px;
-        background-size: 100% 110%;
-    }
-
-    .timeline-year {
-        font-size: 1.3rem;
-    }
-
-    .timeline-title {
-        font-size: 1.3rem;
     }
 
     .separator-image {
         width: 120px;
         height: 120px;
+        margin-right: 0;
+    }
+
+    .image-container {
+        flex-direction: column;
+        justify-content: center;
     }
 
     .subgenres-grid {
         grid-template-columns: 1fr;
-        gap: 15px;
-        margin-top: 30px;
-    }
-
-    .subgenre-card {
-        padding: 20px;
-    }
-
-    .subgenre-title {
-        font-size: 1.3rem;
+        gap: 20px;
     }
 
     .stats-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
 
-    .stat-item {
-        padding: 20px;
+    .sam-dunn {
+        font-size: 1.5rem;
     }
 
-    .stat-number {
-        font-size: 2rem;
-    }
-
-    .filter-btn {
-        padding: 8px 15px;
-        font-size: 0.9rem;
-        margin: 3px;
-    }
-
-    .container-form {
-        width: 90%;
-        margin: 0 auto;
+    .sam-dunn-1 {
+        font-size: 1.1rem;
     }
 
     .form-control input {
-        width: 60%;
-        margin-left: 10px;
+        width: 100%;
+        margin-left: 0;
     }
 
     .toggle-password {
-        right: 25%;
+        right: 10px;
     }
 }
 
-/* Mobile Portrait - 480px and down */
-@media (max-width: 480px) {
-    .hero-image {
-        height: 12vh;
+/* Mobile devices (480px and down) */
+@media screen and (max-width: 480px) {
+    .hero-image .HMisLaw {
+        font-size: 50px;
     }
 
     .hero-container {
-        padding: 10px 3%;
-        gap: 15px;
+        padding: 10px 2%;
     }
 
     .nav-button {
-        padding: 10px 15px;
+        padding: 10px 20px;
         font-size: 0.9rem;
-        margin: 5px 3px;
-    }
-
-    .history {
-        width: 95%;
-        padding: 8px 15px;
-        font-size: 0.9rem;
-    }
-
-    .subtitle {
-        font-size: 1.2rem;
-        margin-bottom: 1.5rem;
+        margin: 5px;
     }
 
     .section {
-        padding: 40px 0;
+        padding: 30px 0;
     }
 
     .section-title,
     .section-title_2 {
         font-size: 1.5rem;
-        margin-bottom: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .container_1,
+    .container_2 {
+        padding: 0 10px;
     }
 
     .timeline-content {
-        margin: 30px 1%;
-        padding: 12px;
-        font-size: 0.85rem;
+        padding: 15px;
+        font-size: 0.9rem;
+        background-size: cover;
     }
 
     .timeline-year {
@@ -744,125 +643,78 @@ background-image: url(img/wandtattoo-heavy-metal_2.jpg);
     }
 
     .subgenre-card {
-        padding: 15px;
+        padding: 20px;
     }
 
     .subgenre-title {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
-    .stats-grid {
-        grid-template-columns: 1fr;
-        gap: 15px;
+    .filter-btn {
+        padding: 8px 15px;
+        font-size: 0.9rem;
     }
 
     .stat-number {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 
     .sam-dunn {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     .sam-dunn-1 {
         font-size: 1rem;
     }
 
-    .filter-btn {
-        padding: 6px 12px;
-        font-size: 0.8rem;
-        margin: 2px;
+    .form {
+        padding: 20px 25px;
     }
 
-    .form-control input {
-        width: 70%;
-        font-size: 12px;
-    }
-
-    .toggle-password {
-        right: 15%;
+    .form-control label {
+        font-size: 0.9rem;
+        padding: 8px;
     }
 
     .form button {
-        width: 25%;
         font-size: 1rem;
-    }
-
-    .bands-list a {
-        font-size: 0.8rem;
-        margin: 8px 0;
+        padding: 8px;
     }
 }
 
-/* Extra Small Mobile - 360px and down */
-@media (max-width: 360px) {
-    .hero-container {
-        padding: 8px 2%;
+/* Large tablets and small desktops (769px to 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .hero-image .HMisLaw {
+        font-size: 120px;
+    }
+
+    .separator-image {
+        margin-right: 200px;
+    }
+
+    .subgenres-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Extra small devices (320px and down) */
+@media screen and (max-width: 320px) {
+    .hero-image .HMisLaw {
+        font-size: 40px;
     }
 
     .nav-button {
-        padding: 8px 12px;
+        padding: 8px 15px;
         font-size: 0.8rem;
-        margin: 3px 2px;
-    }
-
-    .history {
-        width: 98%;
-        padding: 6px 12px;
-        font-size: 0.85rem;
     }
 
     .section-title,
     .section-title_2 {
-        font-size: 1.3rem;
-    }
-
-    .timeline-content {
-        padding: 10px;
-        font-size: 0.8rem;
-    }
-
-    .separator-image {
-        width: 80px;
-        height: 80px;
-    }
-
-    .subgenre-card {
-        padding: 12px;
-    }
-
-    .subgenre-title {
-        font-size: 1.1rem;
-    }
-
-    .stat-number {
-        font-size: 1.5rem;
-    }
-
-    .sam-dunn {
         font-size: 1.2rem;
     }
 
-    .sam-dunn-1 {
-        font-size: 0.9rem;
-    }
-
-    .filter-btn {
-        padding: 5px 10px;
-        font-size: 0.75rem;
-    }
-
-    .form-control input {
-        width: 80%;
-        font-size: 11px;
-    }
-
-    .toggle-password {
-        right: 10%;
-    }
-
-    .form button {
-        width: 30%;
-        font-size: 0.9rem;
+    .timeline-content {
+        margin: 30px 2%;
+        width: 96%;
     }
 }
