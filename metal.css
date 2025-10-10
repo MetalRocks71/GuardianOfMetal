@@ -25,7 +25,7 @@ body {
   font-family: "Metal Mania", system-ui;
   font-weight: 400;
   font-style: normal;
-    background: linear-gradient(rgb(255, 0, 0), rgb(13, 13, 39));
+    background: linear-gradient(rgb(255, 0, 0), rgb(184, 22, 22));
     -webkit-background-clip: text;
             background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -37,12 +37,11 @@ body {
 }
 
 .hero-image {
-background-image: url(img/wandtattoo-heavy-metal_2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    min-height: 20vh;
+    min-height: 50vh;
 
 }
 
