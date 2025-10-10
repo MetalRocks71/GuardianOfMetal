@@ -153,6 +153,7 @@ body {
 }
 
 .section-title_2 {
+      font-family: "Metal Mania", system-ui;
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 3rem;
@@ -380,7 +381,7 @@ body {
     font-size: 1.3rem;
 }
 .sam-dunn-1 a{
-    color: rgba(255, 0, 64, 0.4);
+    color: rgb(113, 110, 111);
 }
 
 .footer {
