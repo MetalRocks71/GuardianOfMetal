@@ -516,6 +516,7 @@ background-image: url(img/wandtattoo-heavy-metal_2.jpg);
 @media screen and (max-width: 768px) {
     .hero-image .HMisLaw {
         font-size: 80px;
+        flex-direction: column;
     }
 
     .hero-container {
