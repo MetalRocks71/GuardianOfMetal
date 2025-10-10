@@ -3,30 +3,55 @@
 function scrollToSection(sectionId) {
   const element = document.getElementById(sectionId);
   if (element) {
-    try {
-      element.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
-        inline: 'nearest'
-      });
-    } catch (e) {
-      // Fallback for older Samsung browsers
-      element.scrollIntoView(true);
+    // Check if smooth scrolling is supported
+    if ('scrollBehavior' in document.documentElement.style) {
+      try {
+        element.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+          inline: 'nearest'
+        });
+      } catch (e) {
+        // Fallback for older browsers
+        element.scrollIntoView(true);
+      }
+    } else {
+      // Polyfill for browsers without smooth scroll support (mainly iOS Safari)
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset;
+      smoothScrollTo(offsetPosition, 600);
     }
   } else {
     console.error('Element with ID "' + sectionId + '" not found');
   }
 }
 
-/*registration form scroll to */
 function scrollToSectionForm(sectionId) {
-  const element = document.getElementById(sectionId);
-  if (element) {
-    element.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
-    });
+  scrollToSection(sectionId);
+}
+
+// Smooth scroll polyfill for browsers that don't support it natively
+function smoothScrollTo(targetPosition, duration) {
+  const startPosition = window.pageYOffset;
+  const distance = targetPosition - startPosition;
+  let startTime = null;
+
+  function animation(currentTime) {
+    if (startTime === null) startTime = currentTime;
+    const timeElapsed = currentTime - startTime;
+    const run = ease(timeElapsed, startPosition, distance, duration);
+    window.scrollTo(0, run);
+    if (timeElapsed < duration) requestAnimationFrame(animation);
   }
+
+  function ease(t, b, c, d) {
+    t /= d / 2;
+    if (t < 1) return c / 2 * t * t + b;
+    t--;
+    return -c / 2 * (t * (t - 2) - 1) + b;
+  }
+
+  requestAnimationFrame(animation);
 }
 /*Filter Genres and subgenres*/
 function filterGenres(genre, event) {
