@@ -30,7 +30,7 @@ function scrollToSectionForm(sectionId) {
   scrollToSection(sectionId);
 }
 
-// Smooth scroll polyfill for browsers that don't support it natively
+// Smooth scroll browsers that don't support it natively
 function smoothScrollTo(targetPosition, duration) {
   const startPosition = window.pageYOffset;
   const distance = targetPosition - startPosition;
