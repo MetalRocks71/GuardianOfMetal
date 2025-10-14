@@ -192,6 +192,19 @@ function togglePassword(inputId) {
   }
 }
 
+// Clear entire form
+function clearForm() {
+  form.reset();
+  [username, email, password, password2].forEach(function(input) {
+    const formControl = input.parentElement;
+    formControl.className = 'form-control';
+    const small = formControl.querySelector('small');
+    small.innerText = '';
+  });
+}
+
+
+
 /*scroll to the top*/
 
 function scrollToTop() {
