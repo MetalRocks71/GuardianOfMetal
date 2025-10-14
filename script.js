@@ -16,7 +16,7 @@ function scrollToSection(sectionId) {
         element.scrollIntoView(true);
       }
     } else {
-      // Polyfill for browsers without smooth scroll support (mainly iOS Safari)
+      //For browsers without smooth scroll support (mainly iOS Safari)
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset;
       smoothScrollTo(offsetPosition, 600);
@@ -54,9 +54,7 @@ function smoothScrollTo(targetPosition, duration) {
   requestAnimationFrame(animation);
 }
 
-
 /*scroll to the top*/
-
 function scrollToTop() {
   window.scrollTo({
     top: 0,
