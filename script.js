@@ -55,6 +55,17 @@ function smoothScrollTo(targetPosition, duration) {
 }
 
 
+/*scroll to the top*/
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+    block: 'start'
+  });
+}
+
+
 /*Filter Genres and subgenres*/
 function filterGenres(genre, event) {
   console.log('Filter called with genre:', genre); // Debug log
@@ -192,10 +203,21 @@ function togglePassword(inputId) {
   }
 }
 
+/*clear the input error message*/
+function clearField(inputId) {
+  const input = document.getElementById(inputId);
+  input.value = ''; // Clears the input value
+  const formControl = input.parentElement;
+  formControl.className = 'form-control'; // Removes error/success class
+  const small = formControl.querySelector('small');
+  small.innerText = ''; // Clears the error message text
+  input.focus();
+}
+
 // Clear entire form
 function clearForm() {
   form.reset();
-  [username, email, password, password2].forEach(function(input) {
+  [username, email, password, password2].forEach(function (input) {
     const formControl = input.parentElement;
     formControl.className = 'form-control';
     const small = formControl.querySelector('small');
@@ -204,13 +226,3 @@ function clearForm() {
 }
 
 
-
-/*scroll to the top*/
-
-function scrollToTop() {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth',
-    block: 'start'
-  });
-}
